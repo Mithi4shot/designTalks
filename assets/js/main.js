@@ -4,36 +4,36 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function($) {
+(function ($) {
   "use strict";
 
   var nav = $('nav');
   var navHeight = nav.outerHeight();
 
-  $('.navbar-toggler').on('click', function() {
+  $('.navbar-toggler').on('click', function () {
     if (!$('#mainNav').hasClass('navbar-reduce')) {
       $('#mainNav').addClass('navbar-reduce');
     }
   })
 
   // Preloader
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
+      $('#preloader').delay(100).fadeOut('slow', function () {
         $(this).remove();
       });
     }
   });
 
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
     }
   });
-  $('.back-to-top').click(function() {
+  $('.back-to-top').click(function () {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
@@ -41,7 +41,7 @@
   });
 
   /*--/ Star ScrollTop /--*/
-  $('.scrolltop-mf').on("click", function() {
+  $('.scrolltop-mf').on("click", function () {
     $('html, body').animate({
       scrollTop: 0
     }, 1000);
@@ -54,7 +54,7 @@
   });
 
   /*--/ Star Scrolling nav /--*/
-  $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
+  $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -68,7 +68,7 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll').on("click", function() {
+  $('.js-scroll').on("click", function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -81,7 +81,7 @@
 
   /*--/ Navbar Menu Reduce /--*/
   $(window).trigger('scroll');
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     var pixels = 50;
     var top = 1200;
     if ($(window).scrollTop() > pixels) {
@@ -124,8 +124,17 @@
   });
 
   // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
-    $('.venobox').venobox();
+  $(document).ready(function () {
+    $('.venobox').venobox({
+      spinColor: '#e2161b',
+
+    });
+  });
+
+  // Initi AOS
+  AOS.init({
+    duration: 800,
+    easing: "ease-in-out"
   });
 
 })(jQuery);

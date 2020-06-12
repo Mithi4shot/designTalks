@@ -80,7 +80,7 @@ a:hover {
 
 .bg-image {
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right top;
   background-size: contain;
   /* background-attachment: fixed;
   
@@ -134,12 +134,12 @@ a:hover {
   padding: 4rem 0;
 }
 
-.sect-pt4 {
-  padding-top: 4rem;
+.sect-pb4 {
+  padding-bottom: 4rem;
 }
 
 .sect-mt4 {
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 
 /*--/ Title s /--*/
@@ -647,7 +647,7 @@ a:hover {
 # Intro Section
 --------------------------------------------------------------*/
 .intro {
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   color: #fff;
 }
@@ -916,8 +916,8 @@ a:hover {
   content: "";
   position: absolute;
   z-index: -1;
-  bottom: -16px;
-  left: -16px;
+  bottom: -32px;
+  left: -32px;
   background: #e2161b;
   height: 32px;
   width: 32px;
@@ -1105,6 +1105,28 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# contact us
+--------------------------------------------------------------*/
+.form-control {
+  border-radius: unset;
+  color: #3d3d3d;
+  background-color: #ebebeb;
+  border: none;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  font-size: 16px;
+}
+.form-control:focus {
+  color: #3d3d3d;
+  background-color: #ebebeb;
+  border-color: unset;
+  outline: 0;
+  box-shadow:unset;
+}
+::placeholder {
+  color: #3d3d3d !important;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 footer {
@@ -1118,17 +1140,26 @@ footer .nav-link {
   font-size: 18px;
   color: #fff;
   font-weight: 400;
+  padding-right: 2rem;
 }
+
+footer .nav-link i{
+  font-size: 30px;
+  color: #fff;
+}
+
 footer .copyright {
   font-size: 14px;
   color: #fff;
   font-weight: 400;
 }
 
-footer .credits {
-  margin-bottom: 0;
-}
 
-footer .credits a {
-  color: #fff;
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .sect-mt4 {
+    margin-top: 4rem;
+  }
 }
