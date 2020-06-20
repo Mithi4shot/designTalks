@@ -7,7 +7,7 @@
 
 body {
   background-color: #ffffff;
-  color: #4e4e4e;
+  color: #3d3d3d;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,12 +22,12 @@ h6 {
 }
 
 a {
-  color: #1e1e1e;
+  color: #3d3d3d;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #0078ff;
+  color: #e2161b;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -92,6 +92,17 @@ a:hover {
   border-radius: 50px;
   border-color: transparent;
 }
+.btn-primary:hover {
+  background: #ce1417;
+  border-color: #ce1417;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: #ce1417 !important;
+  border-color: #ce1417 !important;
+}
 
 @media (max-width: 1024px) {
   .bg-image {
@@ -141,6 +152,7 @@ a:hover {
 .sect-mt4 {
   margin-top: 7rem;
 }
+
 
 /*--/ Title s /--*/
 .title-s {
@@ -771,6 +783,18 @@ a:hover {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+.bg-image-portfolio {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+@media (max-width: 1024px) {
+  .bg-image-portfolio {
+    background-attachment: scroll;
+  }
+}
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
@@ -832,6 +856,18 @@ a:hover {
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
+
+.bg-image-blog {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+@media (max-width: 1024px) {
+  .bg-image-blog {
+    background-attachment: scroll;
+  }
+}
 
 .blog-subtitle {
   font-size: 18px;
@@ -1185,9 +1221,10 @@ a:hover {
   background: #ce1417;
 }
 
-.php-email-form button[type="submit"]:focus {
-  outline: none;
-  box-shadow: none;
+.php-email-form button[type="submit"]:active, .php-email-form button[type="submit"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: #ce1417 !important;
 }
 
 @-webkit-keyframes animate-loading {
