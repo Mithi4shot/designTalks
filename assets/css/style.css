@@ -995,39 +995,7 @@ a:hover {
   background: white;
   position: relative;
   transition: 0.4s ease-out;
-  height: 213px;
-}
-
-#client .card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.25rem;
-  background: #e2161b;
-  z-index: 2;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 0;
-}
-
-#client .card .info {
-  position: relative;
-  z-index: 3;
-  color: white;
-  opacity: 0;
-  -webkit-transform: translateY(30px);
-  transform: translateY(30px);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  display: none;
-}
-.card-img {
-  width: 105px;
-  height: auto;
+  height: 250px;
 }
 
 #client .card-title {
@@ -1042,20 +1010,29 @@ a:hover {
   color: #000;
 }
 
-/* #client .card:hover:before {
-  opacity: 1;
+#client .card-arrow {
+  color: #000;
 }
 
-#client .card:hover .info {
-  display: block;
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  transform: translateY(0px);
+#client .card:hover {
+  background-color: #e2161b;
 }
 
-#client .card:hover .card-title .card-date .card-text {
-  color: #fff !important;
-} */
+#client .card:hover .card-title {
+  color: #fff;
+}
+
+#client .card:hover .card-date {
+  color: #fff;
+}
+
+#client .card:hover .card-text {
+  color: #fff;
+}
+
+#client .card:hover .card-arrow {
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Blog Single
