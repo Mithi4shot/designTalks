@@ -762,6 +762,7 @@ a:hover {
 
 .card-body {
   padding: 10px;
+  height: 445px;
 }
 
 .card-title {
