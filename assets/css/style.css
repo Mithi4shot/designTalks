@@ -761,8 +761,7 @@ a:hover {
 }
 
 .card-body {
-  padding: 10px;
-  height: 445px;
+  padding: 24px;
 }
 
 .card-title {
@@ -781,6 +780,7 @@ a:hover {
   position: relative;
   align-items: flex-start;
   transition: 0.4s ease-out;
+  height: 350px;
 }
 
 #about .card:before {
@@ -990,6 +990,11 @@ a:hover {
 /*--------------------------------------------------------------
 # Client
 --------------------------------------------------------------*/
+#client #client1,
+#client2,
+#client3 {
+  display: none;
+}
 
 #client .card {
   background: white;
@@ -1000,6 +1005,12 @@ a:hover {
 
 #client .card-title {
   font-size: 28px;
+  color: #e2161b;
+  margin-top: 0;
+}
+
+#client .card-title-long {
+  font-size: 18px;
   color: #e2161b;
   margin-top: 0;
 }
@@ -1025,6 +1036,10 @@ a:hover {
 }
 
 #client .card:hover .card-title {
+  color: #fff;
+}
+
+#client .card:hover .card-title-long {
   color: #fff;
 }
 
